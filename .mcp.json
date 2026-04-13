@@ -1,0 +1,24 @@
+{
+  "name": "marketing-analytics-ai-mcp",
+  "description": "MEOK AI Labs \u2014 Marketing analytics toolkit for AI agents: campaign ROI, A/B test analysis,",
+  "vendor": "MEOK AI Labs",
+  "homepage": "https://meok.ai",
+  "repository": "https://github.com/CSOAI-ORG/marketing-analytics-ai-mcp",
+  "runtime": "python",
+  "entrypoint": "server.py",
+  "tools": [
+    "campaign_roi",
+    "ab_test_analyze",
+    "funnel_optimizer",
+    "attribution_model",
+    "ad_copy_generator"
+  ],
+  "categories": [
+    "Marketing",
+    "Analytics"
+  ],
+  "pricing": {
+    "free": "50 calls/day",
+    "pro": "$9/mo"
+  }
+}

@@ -1,0 +1,10 @@
+name: marketing-analytics-ai-mcp
+description: "MEOK AI Labs — Marketing analytics toolkit for AI agents: campaign ROI, A/B test analysis,"
+vendor: MEOK AI Labs
+homepage: https://meok.ai
+repository: https://github.com/CSOAI-ORG/marketing-analytics-ai-mcp
+license: MIT
+categories: [Marketing, Analytics]
+tags: [marketing-analytics, campaign-analysis, roi-tracking, attribution, marketing-metrics]
+runtime: python
+entrypoint: server.py

@@ -5,14 +5,25 @@ build-backend = "hatchling.build"
 [project]
 name = "marketing-analytics-ai-mcp"
 version = "1.0.0"
-description = "MEOK AI Labs — marketing-analytics-ai-mcp MCP Server"
+description = "MEOK AI Labs — Marketing analytics toolkit for AI agents: campaign ROI, A/B test analysis,"
+authors = [{name="MEOK AI Labs", email="nicholas@meok.ai"}]
 readme = "README.md"
-license = {file = "LICENSE"}
+license = {text = "MIT"}
 requires-python = ">=3.10"
-authors = [{name = "MEOK AI Labs", email = "nicholas@meok.ai"}]
-keywords = ["mcp", "ai", "meok", "model-context-protocol"]
-dependencies = ["mcp>=1.0.0"]
+keywords = ["mcp", "mcp-server", "model-context-protocol", "claude", "ai-tools", "meok-ai-labs", "marketing-analytics", "campaign-analysis", "roi-tracking", "attribution", "marketing-metrics"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+    "Intended Audience :: Developers",
+]
+dependencies = [
+    "mcp>=1.0.0",
+]
 
 [project.urls]
 Homepage = "https://meok.ai"
 Repository = "https://github.com/CSOAI-ORG/marketing-analytics-ai-mcp"
+Documentation = "https://meok.ai/docs/marketing-analytics-ai-mcp"
+"Bug Tracker" = "https://github.com/CSOAI-ORG/marketing-analytics-ai-mcp/issues"
