@@ -412,8 +412,7 @@ def _ad_copy_generator(product: str, audience: str, platform: str,
 # ---------------------------------------------------------------------------
 mcp = FastMCP(
     "Marketing Analytics AI MCP",
-    instructions="Marketing analytics toolkit: campaign ROI, A/B test analysis, funnel optimization, attribution modeling, and ad copy generation. By MEOK AI Labs.",
-)
+    instructions="Marketing analytics toolkit: campaign ROI, A/B test analysis, funnel optimization, attribution modeling, and ad copy generation. By MEOK AI Labs.")
 
 
 @mcp.tool()
