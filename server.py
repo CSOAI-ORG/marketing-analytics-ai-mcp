@@ -11,6 +11,11 @@ Install: pip install mcp
 Run:     python server.py
 """
 
+
+import sys, os
+sys.path.insert(0, os.path.expanduser('~/clawd/meok-labs-engine/shared'))
+from auth_middleware import check_access
+
 import math
 import re
 from collections import defaultdict
@@ -417,7 +422,7 @@ mcp = FastMCP(
 
 @mcp.tool()
 def campaign_roi(spend: float, revenue: float, conversions: int = 0,
-                 impressions: int = 0, clicks: int = 0, period_days: int = 30) -> dict:
+                 impressions: int = 0, clicks: int = 0, period_days: int = 30, api_key: str = "") -> dict:
     """Calculate comprehensive campaign ROI including ROAS, CPA, CPC, CPM,
     CTR, conversion rate, and performance assessment with recommendations.
 
@@ -429,6 +434,10 @@ def campaign_roi(spend: float, revenue: float, conversions: int = 0,
         clicks: Total ad clicks
         period_days: Campaign duration in days
     """
+    allowed, msg, tier = check_access(api_key)
+    if not allowed:
+        return {"error": msg, "upgrade_url": "https://meok.ai/pricing"}
+
     err = _check_rate_limit()
     if err:
         return {"error": err}
@@ -441,7 +450,7 @@ def campaign_roi(spend: float, revenue: float, conversions: int = 0,
 @mcp.tool()
 def ab_test_analyze(visitors_a: int, conversions_a: int,
                     visitors_b: int, conversions_b: int,
-                    confidence_level: float = 0.95) -> dict:
+                    confidence_level: float = 0.95, api_key: str = "") -> dict:
     """Analyze A/B test results with statistical significance testing.
     Returns winner, z-score, p-value, lift percentage, and sample size adequacy.
 
@@ -452,6 +461,10 @@ def ab_test_analyze(visitors_a: int, conversions_a: int,
         conversions_b: Conversions in variant group (B)
         confidence_level: Required confidence level (default: 0.95)
     """
+    allowed, msg, tier = check_access(api_key)
+    if not allowed:
+        return {"error": msg, "upgrade_url": "https://meok.ai/pricing"}
+
     err = _check_rate_limit()
     if err:
         return {"error": err}
@@ -462,13 +475,17 @@ def ab_test_analyze(visitors_a: int, conversions_a: int,
 
 
 @mcp.tool()
-def funnel_optimizer(stages: list[dict]) -> dict:
+def funnel_optimizer(stages: list[dict], api_key: str = "") -> dict:
     """Analyze a conversion funnel and identify the biggest leak point with
     optimization recommendations.
 
     Args:
         stages: List of funnel stages as [{"name": "Awareness", "count": 10000}, {"name": "Interest", "count": 3000}, ...]
     """
+    allowed, msg, tier = check_access(api_key)
+    if not allowed:
+        return {"error": msg, "upgrade_url": "https://meok.ai/pricing"}
+
     err = _check_rate_limit()
     if err:
         return {"error": err}
@@ -479,7 +496,7 @@ def funnel_optimizer(stages: list[dict]) -> dict:
 
 
 @mcp.tool()
-def attribution_model(touchpoints: list[dict], model: str = "linear") -> dict:
+def attribution_model(touchpoints: list[dict], model: str = "linear", api_key: str = "") -> dict:
     """Apply an attribution model to marketing touchpoints. Distributes conversion
     credit across channels based on the chosen model.
 
@@ -487,6 +504,10 @@ def attribution_model(touchpoints: list[dict], model: str = "linear") -> dict:
         touchpoints: Journey as [{"channel": "google", "timestamp": "2024-01-01", "cost": 50}, ...]
         model: Attribution model (first_touch, last_touch, linear, time_decay, u_shaped, w_shaped)
     """
+    allowed, msg, tier = check_access(api_key)
+    if not allowed:
+        return {"error": msg, "upgrade_url": "https://meok.ai/pricing"}
+
     err = _check_rate_limit()
     if err:
         return {"error": err}
@@ -498,7 +519,7 @@ def attribution_model(touchpoints: list[dict], model: str = "linear") -> dict:
 
 @mcp.tool()
 def ad_copy_generator(product: str, audience: str, platform: str = "facebook",
-                      tone: str = "professional", cta: str = "") -> dict:
+                      tone: str = "professional", cta: str = "", api_key: str = "") -> dict:
     """Generate ad copy variants tailored to a specific platform with proper
     character limits and best practices.
 
@@ -509,6 +530,10 @@ def ad_copy_generator(product: str, audience: str, platform: str = "facebook",
         tone: Copy tone (professional, casual, urgent, inspirational, humorous)
         cta: Call to action text (default: auto-generated based on tone)
     """
+    allowed, msg, tier = check_access(api_key)
+    if not allowed:
+        return {"error": msg, "upgrade_url": "https://meok.ai/pricing"}
+
     err = _check_rate_limit()
     if err:
         return {"error": err}

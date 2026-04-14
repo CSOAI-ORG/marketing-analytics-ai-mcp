@@ -1,24 +1,135 @@
 {
   "name": "marketing-analytics-ai-mcp",
-  "description": "MEOK AI Labs \u2014 Marketing analytics toolkit for AI agents: campaign ROI, A/B test analysis,",
-  "vendor": "MEOK AI Labs",
-  "homepage": "https://meok.ai",
-  "repository": "https://github.com/CSOAI-ORG/marketing-analytics-ai-mcp",
-  "runtime": "python",
-  "entrypoint": "server.py",
+  "description": "**By MEOK AI Labs** | [meok.ai](https://meok.ai)",
+  "version": "1.0.0",
   "tools": [
-    "campaign_roi",
-    "ab_test_analyze",
-    "funnel_optimizer",
-    "attribution_model",
-    "ad_copy_generator"
-  ],
-  "categories": [
-    "Marketing",
-    "Analytics"
-  ],
-  "pricing": {
-    "free": "50 calls/day",
-    "pro": "$9/mo"
-  }
+    {
+      "name": "campaign_roi",
+      "description": "Calculate comprehensive campaign ROI including ROAS, CPA, CPC, CPM,",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "spend": {
+            "type": "number"
+          },
+          "revenue": {
+            "type": "number"
+          },
+          "conversions": {
+            "type": "integer"
+          },
+          "impressions": {
+            "type": "integer"
+          },
+          "clicks": {
+            "type": "integer"
+          },
+          "period_days": {
+            "type": "integer"
+          }
+        },
+        "required": [
+          "spend",
+          "revenue"
+        ]
+      }
+    },
+    {
+      "name": "ab_test_analyze",
+      "description": "Analyze A/B test results with statistical significance testing.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "visitors_a": {
+            "type": "integer"
+          },
+          "conversions_a": {
+            "type": "integer"
+          },
+          "visitors_b": {
+            "type": "integer"
+          },
+          "conversions_b": {
+            "type": "integer"
+          },
+          "confidence_level": {
+            "type": "number"
+          }
+        },
+        "required": [
+          "visitors_a",
+          "conversions_a",
+          "visitors_b",
+          "conversions_b"
+        ]
+      }
+    },
+    {
+      "name": "funnel_optimizer",
+      "description": "Analyze a conversion funnel and identify the biggest leak point with",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "stages": {
+            "type": "array",
+            "items": {
+              "type": "object"
+            }
+          }
+        },
+        "required": [
+          "stages"
+        ]
+      }
+    },
+    {
+      "name": "attribution_model",
+      "description": "Apply an attribution model to marketing touchpoints. Distributes conversion",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "touchpoints": {
+            "type": "array",
+            "items": {
+              "type": "object"
+            }
+          },
+          "model": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "touchpoints"
+        ]
+      }
+    },
+    {
+      "name": "ad_copy_generator",
+      "description": "Generate ad copy variants tailored to a specific platform with proper",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "product": {
+            "type": "string"
+          },
+          "audience": {
+            "type": "string"
+          },
+          "platform": {
+            "type": "string"
+          },
+          "tone": {
+            "type": "string"
+          },
+          "cta": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "product",
+          "audience"
+        ]
+      }
+    }
+  ]
 }
