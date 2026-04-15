@@ -1,6 +1,6 @@
 name: marketing-analytics-ai-mcp
-description: 'Marketing analytics toolkit: campaign ROI, A/B test analysis, funnel
-  optimization, attribution model'
+description: AI-powered marketing analytics ai MCP server for agents. Supports campaign
+  roi, ab test analyze, funnel optimizer. By MEOK AI Labs.
 version: 1.0.0
 tools:
 - name: campaign_roi
