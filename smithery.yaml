@@ -1,5 +1,6 @@
 name: marketing-analytics-ai-mcp
-description: '**By MEOK AI Labs** | [meok.ai](https://meok.ai)'
+description: 'Marketing analytics toolkit: campaign ROI, A/B test analysis, funnel
+  optimization, attribution model'
 version: 1.0.0
 tools:
 - name: campaign_roi

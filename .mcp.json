@@ -1,6 +1,6 @@
 {
   "name": "marketing-analytics-ai-mcp",
-  "description": "**By MEOK AI Labs** | [meok.ai](https://meok.ai)",
+  "description": "> **By [MEOK AI Labs](https://meok.ai)** \u2014 Marketing analytics toolkit: campaign ROI, A/B test analysis, funnel optimization, attribution model",
   "version": "1.0.0",
   "tools": [
     {
@@ -71,10 +71,7 @@
         "type": "object",
         "properties": {
           "stages": {
-            "type": "array",
-            "items": {
-              "type": "object"
-            }
+            "type": "array"
           }
         },
         "required": [
@@ -89,10 +86,7 @@
         "type": "object",
         "properties": {
           "touchpoints": {
-            "type": "array",
-            "items": {
-              "type": "object"
-            }
+            "type": "array"
           },
           "model": {
             "type": "string"
