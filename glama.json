@@ -1,0 +1,10 @@
+{
+  "name": "marketing-analytics-ai-mcp",
+  "description": "MEOK AI Labs \u2014 marketing-analytics-ai-mcp",
+  "vendor": "MEOK AI Labs",
+  "homepage": "https://meok.ai",
+  "repository": "https://github.com/CSOAI-ORG/marketing-analytics-ai-mcp",
+  "license": "MIT",
+  "runtime": "python",
+  "entryPoint": "mcp-wrapper.py"
+}
