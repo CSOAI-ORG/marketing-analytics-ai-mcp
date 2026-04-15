@@ -1,0 +1,58 @@
+{
+  "name": "Marketing Analytics AI MCP",
+  "description": "Marketing analytics toolkit: campaign ROI, A/B test analysis, funnel optimization, attribution modeling, and ad copy generation. By MEOK AI Labs.",
+  "version": "1.0.0",
+  "protocol_version": "2025-11-25",
+  "publisher": {
+    "name": "MEOK AI Labs",
+    "url": "https://meok.ai",
+    "email": "nicholas@meok.ai"
+  },
+  "repository": "https://github.com/CSOAI-ORG/marketing-analytics-ai-mcp",
+  "license": "MIT",
+  "transport": [
+    "stdio",
+    "streamable-http"
+  ],
+  "authentication": {
+    "type": "api-key",
+    "free_tier": true,
+    "free_limit": "15 calls/day"
+  },
+  "tools": [
+    {
+      "name": "campaign_roi",
+      "description": "Calculate comprehensive campaign ROI including ROAS, CPA, CPC, CPM,"
+    },
+    {
+      "name": "ab_test_analyze",
+      "description": "Analyze A/B test results with statistical significance testing."
+    },
+    {
+      "name": "funnel_optimizer",
+      "description": "Analyze a conversion funnel and identify the biggest leak point with"
+    },
+    {
+      "name": "attribution_model",
+      "description": "Apply an attribution model to marketing touchpoints. Distributes conversion"
+    },
+    {
+      "name": "ad_copy_generator",
+      "description": "Generate ad copy variants tailored to a specific platform with proper"
+    }
+  ],
+  "categories": [
+    "AI & Machine Learning",
+    "Data & Analytics",
+    "Developer Tools"
+  ],
+  "pricing": {
+    "free": {
+      "calls_per_day": 15
+    },
+    "pro": {
+      "price": "$29/month",
+      "url": "https://meok.ai/pricing"
+    }
+  }
+}
