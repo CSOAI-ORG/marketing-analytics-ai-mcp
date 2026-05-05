@@ -1,53 +1,38 @@
-# Marketing Analytics AI MCP Server
-**By MEOK AI Labs** | [meok.ai](https://meok.ai)
+<div align="center">
 
-Marketing analytics toolkit: campaign ROI, A/B test analysis, funnel optimization, attribution modeling, and ad copy generation.
+[![GitHub stars](https://img.shields.io/github/stars/CSOAI-ORG/marketing-analytics-ai-mcp)](https://github.com/CSOAI-ORG/marketing-analytics-ai-mcp/stargazers)
 
-## Tools
+# umarketingU analyticsU aiU mcp
 
-| Tool | Description |
-|------|-------------|
-| `campaign_roi` | Calculate ROI, ROAS, CPA, CPC, CPM with performance assessment |
-| `ab_test_analyze` | Statistical significance testing for A/B experiments |
-| `funnel_optimizer` | Identify biggest funnel leak with optimization recommendations |
-| `attribution_model` | Multi-touch attribution (first, last, linear, time decay, U/W-shaped) |
-| `ad_copy_generator` | Platform-specific ad copy with character limits and best practices |
+****By MEOK AI Labs** | [meok.ai](https://meok.ai)**
+
+[![npm version](https://img.shields.io/npm/v/@meok-ai/marketing-analytics-ai-mcp)](https://www.npmjs.com/package/@meok-ai/marketing-analytics-ai-mcp)
+[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
+[![MEOK AI Labs](https://img.shields.io/badge/MEOK_AI_Labs-255+_servers-purple)](https://meok.ai)
+
+[Installation](#installation) · [Docs](https://csoai.org) · [Report Bug](https://github.com/CSOAI-ORG/marketing-analytics-ai-mcp/issues)
+
+</div>
+
+---
 
 ## Installation
 
 ```bash
-pip install mcp
+pip install marketing-analytics-ai-mcp
+# or
+npm install -g @meok-ai/marketing-analytics-ai-mcp
 ```
 
-## Usage
+## Quick Start
 
-### Run the server
+See the project repository for full documentation and examples.
 
-```bash
-python server.py
-```
+## Enterprise Support
 
-### Claude Desktop config
-
-```json
-{
-  "mcpServers": {
-    "marketing-analytics": {
-      "command": "python",
-      "args": ["/path/to/marketing-analytics-ai-mcp/server.py"]
-    }
-  }
-}
-```
-
-## Pricing
-
-| Tier | Limit | Price |
-|------|-------|-------|
-| Free | 30 calls/day | $0 |
-| Pro | Unlimited + premium features | $9/mo |
-| Enterprise | Custom + SLA + support | Contact us |
+- 📧 nicholas@csoai.org
+- 🌐 [CSOAI.org](https://csoai.org)
 
 ## License
 
-MIT
+MIT © [CSOAI](https://csoai.org)
