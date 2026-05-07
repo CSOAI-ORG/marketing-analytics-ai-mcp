@@ -1,3 +1,5 @@
+[![marketing-analytics-ai-mcp MCP server](https://glama.ai/mcp/servers/CSOAI-ORG/marketing-analytics-ai-mcp/badges/card.svg)](https://glama.ai/mcp/servers/CSOAI-ORG/marketing-analytics-ai-mcp)
+
 <div align="center">
 
 [![GitHub stars](https://img.shields.io/github/stars/CSOAI-ORG/marketing-analytics-ai-mcp)](https://github.com/CSOAI-ORG/marketing-analytics-ai-mcp/stargazers)
