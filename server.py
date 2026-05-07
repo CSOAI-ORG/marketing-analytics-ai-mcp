@@ -433,6 +433,21 @@ def campaign_roi(spend: float, revenue: float, conversions: int = 0,
         impressions: Total ad impressions
         clicks: Total ad clicks
         period_days: Campaign duration in days
+
+    Behavior:
+        This tool is read-only and stateless — it produces analysis output
+        without modifying any external systems, databases, or files.
+        Safe to call repeatedly with identical inputs (idempotent).
+        Free tier: 10/day rate limit. Pro tier: unlimited.
+        No authentication required for basic usage.
+
+    When to use:
+        Use this tool when you need structured analysis or classification
+        of inputs against established frameworks or standards.
+
+    When NOT to use:
+        Not suitable for real-time production decision-making without
+        human review of results.
     """
     allowed, msg, tier = check_access(api_key)
     if not allowed:
@@ -460,6 +475,21 @@ def ab_test_analyze(visitors_a: int, conversions_a: int,
         visitors_b: Visitors in variant group (B)
         conversions_b: Conversions in variant group (B)
         confidence_level: Required confidence level (default: 0.95)
+
+    Behavior:
+        This tool is read-only and stateless — it produces analysis output
+        without modifying any external systems, databases, or files.
+        Safe to call repeatedly with identical inputs (idempotent).
+        Free tier: 10/day rate limit. Pro tier: unlimited.
+        No authentication required for basic usage.
+
+    When to use:
+        Use this tool when you need structured analysis or classification
+        of inputs against established frameworks or standards.
+
+    When NOT to use:
+        Not suitable for real-time production decision-making without
+        human review of results.
     """
     allowed, msg, tier = check_access(api_key)
     if not allowed:
@@ -481,6 +511,21 @@ def funnel_optimizer(stages: list[dict], api_key: str = "") -> dict:
 
     Args:
         stages: List of funnel stages as [{"name": "Awareness", "count": 10000}, {"name": "Interest", "count": 3000}, ...]
+
+    Behavior:
+        This tool is read-only and stateless — it produces analysis output
+        without modifying any external systems, databases, or files.
+        Safe to call repeatedly with identical inputs (idempotent).
+        Free tier: 10/day rate limit. Pro tier: unlimited.
+        No authentication required for basic usage.
+
+    When to use:
+        Use this tool when you need structured analysis or classification
+        of inputs against established frameworks or standards.
+
+    When NOT to use:
+        Not suitable for real-time production decision-making without
+        human review of results.
     """
     allowed, msg, tier = check_access(api_key)
     if not allowed:
@@ -503,6 +548,21 @@ def attribution_model(touchpoints: list[dict], model: str = "linear", api_key: s
     Args:
         touchpoints: Journey as [{"channel": "google", "timestamp": "2024-01-01", "cost": 50}, ...]
         model: Attribution model (first_touch, last_touch, linear, time_decay, u_shaped, w_shaped)
+
+    Behavior:
+        This tool is read-only and stateless — it produces analysis output
+        without modifying any external systems, databases, or files.
+        Safe to call repeatedly with identical inputs (idempotent).
+        Free tier: 10/day rate limit. Pro tier: unlimited.
+        No authentication required for basic usage.
+
+    When to use:
+        Use this tool when you need structured analysis or classification
+        of inputs against established frameworks or standards.
+
+    When NOT to use:
+        Not suitable for real-time production decision-making without
+        human review of results.
     """
     allowed, msg, tier = check_access(api_key)
     if not allowed:
@@ -529,6 +589,20 @@ def ad_copy_generator(product: str, audience: str, platform: str = "facebook",
         platform: Ad platform (google_search, facebook, instagram, linkedin, twitter, tiktok)
         tone: Copy tone (professional, casual, urgent, inspirational, humorous)
         cta: Call to action text (default: auto-generated based on tone)
+
+    Behavior:
+        This tool generates structured output without modifying external systems.
+        Output is deterministic for identical inputs. No side effects.
+        Free tier: 10/day rate limit. Pro tier: unlimited.
+        No authentication required for basic usage.
+
+    When to use:
+        Use this tool when you need structured analysis or classification
+        of inputs against established frameworks or standards.
+
+    When NOT to use:
+        Not suitable for real-time production decision-making without
+        human review of results.
     """
     allowed, msg, tier = check_access(api_key)
     if not allowed:
