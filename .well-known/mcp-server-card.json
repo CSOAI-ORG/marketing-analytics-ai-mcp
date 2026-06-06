@@ -1,0 +1,28 @@
+{
+  "name": "marketing-analytics-ai-mcp",
+  "title": "Marketing Analytics Ai Mcp",
+  "description": "AI-powered marketing analytics ai MCP server for agents. Supports campaign roi, ab test analyze, funnel optimizer. By MEOK AI Labs.",
+  "version": "1.0.6",
+  "homepage": "https://meok.ai",
+  "license": "MIT",
+  "transport": {
+    "type": "stdio"
+  },
+  "tools": [
+    {
+      "name": "campaign_roi"
+    },
+    {
+      "name": "ab_test_analyze"
+    },
+    {
+      "name": "funnel_optimizer"
+    },
+    {
+      "name": "attribution_model"
+    },
+    {
+      "name": "ad_copy_generator"
+    }
+  ]
+}

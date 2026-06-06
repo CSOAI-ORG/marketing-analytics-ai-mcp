@@ -1,0 +1,36 @@
+# marketing-analytics-ai-mcp
+# **MCP server for marketing analytics ai mcp operations**
+
+## Install
+```bash
+pip install marketing-analytics-ai-mcp
+```
+
+## Auth & Rate Limits
+- Free tier: 10 calls/day. No API key required.
+- Pro tier (£79/mo): unlimited + signed attestations.
+- Enterprise (£1,499/mo): white-label.
+
+## Tools
+
+### `campaign_roi`
+Calculate comprehensive campaign ROI including ROAS, CPA, CPC, CPM,
+
+### `ab_test_analyze`
+Analyze A/B test results with statistical significance testing.
+
+### `funnel_optimizer`
+Analyze a conversion funnel and identify the biggest leak point with
+
+### `attribution_model`
+Apply an attribution model to marketing touchpoints. Distributes conversion
+
+### `ad_copy_generator`
+Generate ad copy variants tailored to a specific platform with proper
+
+
+## Maintainer
+MEOK AI Labs · hello@meok.ai · https://meok.ai · MIT licensed
+
+## Pairs with
+Governance moat: pair this tool with any of MEOK's 38 governance MCPs (EU AI Act, DORA, NIS2, CRA, GDPR, ISO 42001, etc.) for full compliance coverage.

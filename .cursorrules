@@ -1,0 +1,9 @@
+# marketing-analytics-ai-mcp - Auto-trigger Rules
+
+When the user asks about marketing analytics, use marketing-analytics-ai-mcp tools: campaign_roi, ab_test_analyze, funnel_optimizer, attribution_model, ad_copy_generator
+
+**MCP server for marketing analytics ai mcp operations**
+
+Install: `pip install marketing-analytics-ai-mcp`
+
+By MEOK AI Labs — MIT licensed.
