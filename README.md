@@ -1,4 +1,6 @@
 <!-- mcp-name: CSOAI-ORG/marketing-analytics-ai-mcp -->
+[![MCP Scorecard: 86/100](https://img.shields.io/badge/proofof.ai-86%2F100-5b21b6)](https://proofof.ai/scorecard/marketing-analytics-ai-mcp.html)
+
 # Marketing Analytics Ai MCP
 
 [![MEOK AI Labs](https://img.shields.io/badge/MEOK-AI%20Labs-667eea)](https://meok.ai)
