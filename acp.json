@@ -1,0 +1,23 @@
+{
+  "acpVersion": "0.1",
+  "agent": {
+    "name": "marketing-analytics-ai-mcp",
+    "description": "Marketing Analytics Ai MCP Server by MEOK AI Labs",
+    "version": "1.0.6",
+    "provider": "MEOK AI Labs",
+    "interfaces": [
+      {
+        "type": "mcp",
+        "transport": "stdio",
+        "package": "marketing-analytics-ai-mcp"
+      }
+    ],
+    "capabilities": [
+      "campaign_roi",
+      "ab_test_analyze",
+      "funnel_optimizer",
+      "attribution_model",
+      "ad_copy_generator"
+    ]
+  }
+}

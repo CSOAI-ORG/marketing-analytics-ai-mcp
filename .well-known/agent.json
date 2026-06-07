@@ -1,0 +1,68 @@
+{
+  "name": "marketing-analytics-ai-mcp",
+  "description": "Marketing Analytics Ai MCP Server by MEOK AI Labs",
+  "url": "https://proofof.ai/scorecard/marketing-analytics-ai-mcp.html",
+  "version": "1.0.6",
+  "protocolVersion": "0.2.0",
+  "provider": {
+    "organization": "MEOK AI Labs",
+    "url": "https://meok.ai"
+  },
+  "capabilities": {
+    "streaming": false,
+    "pushNotifications": false
+  },
+  "defaultInputModes": [
+    "text"
+  ],
+  "defaultOutputModes": [
+    "text"
+  ],
+  "skills": [
+    {
+      "id": "campaign_roi",
+      "name": "Campaign Roi",
+      "description": "campaign_roi via marketing-analytics-ai-mcp",
+      "tags": [
+        "mcp",
+        "compliance"
+      ]
+    },
+    {
+      "id": "ab_test_analyze",
+      "name": "Ab Test Analyze",
+      "description": "ab_test_analyze via marketing-analytics-ai-mcp",
+      "tags": [
+        "mcp",
+        "compliance"
+      ]
+    },
+    {
+      "id": "funnel_optimizer",
+      "name": "Funnel Optimizer",
+      "description": "funnel_optimizer via marketing-analytics-ai-mcp",
+      "tags": [
+        "mcp",
+        "compliance"
+      ]
+    },
+    {
+      "id": "attribution_model",
+      "name": "Attribution Model",
+      "description": "attribution_model via marketing-analytics-ai-mcp",
+      "tags": [
+        "mcp",
+        "compliance"
+      ]
+    },
+    {
+      "id": "ad_copy_generator",
+      "name": "Ad Copy Generator",
+      "description": "ad_copy_generator via marketing-analytics-ai-mcp",
+      "tags": [
+        "mcp",
+        "compliance"
+      ]
+    }
+  ]
+}
